@@ -3,8 +3,8 @@
   "description": "Hyas core",
   "version": "1.5.7",
   "engines": {
-		"node": ">=16.15.0"
-	},
+    "node": ">=16.15.0"
+  },
   "browserslist": [
     "defaults"
   ],
@@ -37,7 +37,6 @@
     "check": "exec-bin node_modules/.bin/hugo/hugo version",
     "latest:hugo": "gh release view --repo gohugoio/hugo",
     "latest:hyas": "gh release view --repo h-enk/hyas",
-    "copy:katex-fonts": "shx cp ./node_modules/katex/dist/fonts/* ./static/fonts/",
     "postinstall": "hugo-installer --version otherDependencies.hugo --extended --destination node_modules/.bin/hugo",
     "version": "auto-changelog -p && git add CHANGELOG.md"
   },
@@ -65,6 +64,6 @@
     "stylelint-config-standard-scss": "^3.0"
   },
   "otherDependencies": {
-    "hugo": "0.99.0"
+    "hugo": "0.100.1"
   }
 }
